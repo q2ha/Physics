@@ -23,20 +23,20 @@
             background-color: #e6f0ff; /* لون أزرق فاتح للمربع */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             max-width: 500px;
+            width: 100%; /* التأكد من أن المربع يستفيد من العرض الكامل حتى الحد الأقصى */
             margin: auto;
         }
 
         header {
             display: flex;
-            align-items: center;
             justify-content: center;
-            gap: 20px; /* المسافة بين الصور */
+            align-items: center;
+            gap: 20px; /* المسافة بين الشعارين */
             margin-bottom: 20px;
         }
 
-        .logo,
-        .physics-logo {
-            width: 150px;
+        .logo, .physics-logo {
+            width: 100px; /* عرض الشعارين */
             height: auto;
         }
 
@@ -66,7 +66,7 @@
         footer {
             margin-top: 20px;
             font-size: 14px;
-            color: #003366; /* لون النص في الفوتر */
+            color: #ddd; /* لون النص في الفوتر */
         }
 
         .button-container {
@@ -76,8 +76,15 @@
         }
 
         .button-container .button {
-            flex: 1 1 45%; /* جعل الأزرار تأخذ 45% من عرض الحاوية وتلتف بشكل مناسب */
-            max-width: 200px; /* الحد الأقصى لعرض الأزرار */
+            flex: 1 1 30%; /* جعل الأزرار تأخذ 30% من عرض الحاوية وتلتف بشكل مناسب */
+            max-width: 150px; /* الحد الأقصى لعرض الأزرار */
+            margin-bottom: 10px; /* إضافة مسافة أسفل الأزرار لضمان التباعد بين الصفوف */
+        }
+
+        .back-button {
+            background-color: #666; /* لون خلفية زر الرجوع */
+            color: #fff; /* لون النص أبيض */
+            margin-top: 20px;
         }
     </style>
 </head>
