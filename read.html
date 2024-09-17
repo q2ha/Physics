@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتدى الفيزياء</title>
+    <style>
+        body {
+            background: #003366; /* لون خلفية داكن أزرق */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            direction: rtl; /* الكتابة من اليمين لليسار */
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #0099ff; /* لون أزرق فاتح للمربع */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+            margin: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* المسافة بين الأيقونات */
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ddd;
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .back-button {
+            background-color: #003366; /* لون خلفية الأزرار مطابق للخلفية */
+            color: #fff; /* لون النص أبيض */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button:hover {
+            background-color: #002244; /* لون أغمق عند المرور فوق الأزرار */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>مواقع التواصل</h2>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/channel/UCXXXXXX" target="_blank">
+                <img src="icons8-youtube-50.png" alt="يوتيوب" class="logo">
+            </a>
+            <a href="https://x.com/yourprofile" target="_blank">
+                <img src="icons8-x-50.png" alt="تويتر" class="logo">
+            </a>
+        </div>
+        <button class="back-button" onclick="window.location.href='index.html'">العودة إلى الصفحة الرئيسية</button>
+    </div>
+</body>
+</html>

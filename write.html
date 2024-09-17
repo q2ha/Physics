@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اكتب ما تريد</title>
+    <style>
+        body {
+            background: #003366; /* لون خلفية داكن أزرق */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            direction: rtl; /* الكتابة من اليمين لليسار */
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #0099ff; /* لون أزرق فاتح للمربع */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 600px; /* زيادة العرض الأقصى للمربع */
+            width: 100%; /* التأكد من أن المربع يستفيد من العرض الكامل حتى الحد الأقصى */
+            margin: auto;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px; /* المسافة بين الشعارين */
+            margin-bottom: 20px;
+        }
+
+        .logo,
+        .physics-logo {
+            width: 150px;
+            height: auto;
+        }
+
+        h1 {
+            color: #fff; /* لون النص أبيض */
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .button {
+            background-color: #003366; /* لون خلفية الأزرار مطابق للخلفية */
+            color: #fff; /* لون النص أبيض */
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            background-color: #002244; /* لون أغمق عند المرور فوق الأزرار */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ddd; /* لون النص في الفوتر */
+        }
+
+        .note {
+            color: #fff; /* لون النص أبيض */
+            margin-top: 20px;
+        }
+
+        .back-button {
+            background-color: #666; /* لون خلفية زر الرجوع */
+            color: #fff; /* لون النص أبيض */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="عامر بن فيهرة.png" alt="شعار ثانوية عامر بن فهيرة" class="logo">
+            <img src="Physics-.png" alt="شعار مادة الفيزياء" class="physics-logo">
+        </header>
+        <main>
+            <h1>ارسل ما تريد هنا</h1>
+            <button class="button" onclick="window.open('https://forms.example.com', '_blank')">إرسال رسالة</button>
+            <div class="note">
+                <p>ملاحظة: ادخل إلى الرابط لإرسال الرسالة.</p>
+            </div>
+            <button class="button back-button" onclick="window.location.href='index.html'">الرجوع إلى الصفحة الرئيسية</button>
+        </main>
+    </div>
+</body>
+</html>
